@@ -13,7 +13,7 @@
         <mainClass>com.delta.sample.Main</mainClass>
     </properties>
 
-    <dependencies>
+    <!--dependencies>
         <dependency>
             <groupId>io.delta</groupId>
             <artifactId>delta-core_2.11</artifactId>
@@ -31,8 +31,43 @@
             <version>2.4.4</version>
             <scope>provided</scope>
         </dependency>
-    </dependencies>
+    </dependencies-->
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.12</artifactId>
+            <version>3.0.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.12</artifactId>
+            <version>3.0.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.delta</groupId>
+            <artifactId>delta-core_2.12</artifactId>
+            <version>0.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.delta</groupId>
+            <artifactId>delta-contribs_2.12</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--dependency>
+            <groupId>com.oracle.oci.sdk</groupId>
+            <artifactId>oci-hdfs-connector</artifactId>
+            <version>3.3.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>3.2.0</version>
+            <scope>provided</scope>
+        </dependency-->
+</dependencies>
     <build>
         <sourceDirectory>../src/main/scala</sourceDirectory>
         <plugins>
@@ -60,5 +95,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
