@@ -12,4 +12,4 @@ Steps to get started
 ```
 mvn clean install
 ```
-* Create a sample application in Dataflow 
+* Create a sample application in Dataflow using the jar built
